@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pokemon</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            var pokemonNum = "";
+            function getPokemon(){
+                for (var i = 1; i <= 151; i++){
+                    pokemonNum+="<img src=http://pokeapi.co/media/img/" + i + ".png>"
+                }
+                $("#images").html(pokemonNum);
+            }
+            getPokemon();
+        })
+    </script>
+
+</head>
+<body>
+<div id="images"></div>
+    
+</body>
+</html>
